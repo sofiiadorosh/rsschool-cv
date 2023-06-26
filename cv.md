@@ -2,8 +2,8 @@
 
 **Sofiia Anenko**
 
-Phone: +380 63 361 0565
-E-mail: anenko.sofiia@gmail.com
+Phone: +380 63 361 0565  
+E-mail: anenko.sofiia@gmail.com  
 LinkedIn: https://www.linkedin.com/in/sofiia-anenko/
 
 ## About me
@@ -38,34 +38,34 @@ From the moment I produced "Hello World" in the console of my first application,
     import { useAuth } from '@hooks';
 
     type PrivateRouteProps = {
-    component: JSX.Element;
-    redirectTo: string;
+      component: JSX.Element;
+      redirectTo: string;
     };
 
     export const PrivateRoute = ({
-    component: Component,
-    redirectTo = '/',
+      component: Component,
+      redirectTo = '/',
     }: PrivateRouteProps): JSX.Element => {
-    const { isAuthorized } = useAuth();
-    const shouldRedirect = !isAuthorized;
-    return shouldRedirect ? <Navigate to={redirectTo} /> : Component;
+      const { isAuthorized } = useAuth();
+      const shouldRedirect = !isAuthorized;
+      return shouldRedirect ? <Navigate to={redirectTo} /> : Component;
     };
 
     <Route
-    path={Pathname.TODOS}
-    element={
-    <PrivateRoute
-    redirectTo={Pathname.AUTH}
-    component={<TodosPage />}
-    />
-    }
+      path={Pathname.TODOS}
+      element={
+        <PrivateRoute
+          redirectTo={Pathname.AUTH}
+          component={<TodosPage />}
+        />
+      }
     />
 
 ## Project Experience
 
-### Todo App, Link
+### [Todo App](https://todo-app-frontend-9gwb.onrender.com/), [Link](https://github.com/anenkosofi/scaling-enigma)
 
-**[TypeScript, React.js, Node.js, Redux Toolkit, Axios, SCSS, Webpack]**
+**[TypeScript, React.js, Node.js, Redux Toolkit, Axios, SCSS, Webpack]**  
 A simple and easy to use todo management tool that lets you store all your tasks under a single umbrella.
 Accomplishments:
 
@@ -75,9 +75,9 @@ Accomplishments:
 - Built effective navigation components utilizing React Router to enable page-to-page navigation, facilitating access
 - Implemented server-side todo application
 
-### Freshnesecom, Link
+### [Freshnesecom](https://anenkosofi.github.io/literate-octo-robot/), [Link](https://github.com/anenkosofi/literate-octo-robot)
 
-**[TypeScript, React.js, Redux Toolkit, Axios, SCSS, Webpack]**
+**[TypeScript, React.js, Redux Toolkit, Axios, SCSS, Webpack]**  
 Mobile friendly mediator between customers and sellers. The platform lets them order different products.
 Accomplishments:
 
@@ -88,10 +88,10 @@ Accomplishments:
 
 ## Education
 
-- GoIT School | 2022-2023
+- GoIT School | 2022-2023  
   _Full Stack Developer_
 
-- Bogomolets National Medical University | 2015-2021
+- Bogomolets National Medical University | 2015-2021  
   _Master's degree in General Medicine_
 
 ## Languages
