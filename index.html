@@ -8,66 +8,66 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <header>
-      <div>
-        <nav>
-          <ul>
-            <li><a href="#contacts">Contacts</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Project experience</a></li>
-            <li><a href="#code">Code sample</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#languages">Languages</a></li>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#contacts">Contacts</a></li>
+            <li class="nav__item"><a class="nav__link" href="#about">About me</a></li>
+            <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+            <li class="nav__item"><a class="nav__link" href="#projects">Project experience</a></li>
+            <li class="nav__item"><a class="nav__link" href="#code">Code sample</a></li>
+            <li class="nav__item"><a class="nav__link" href="#education">Education</a></li>
+            <li class="nav__item"><a class="nav__link" href="#languages">Languages</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section>
-        <div>
-          <div>
-            <img src="./assets/sofi.JPG" alt="Sofiia Anenko" />
+      <section class="section">
+        <div class="container">
+          <div class="image__thumb">
+            <img class="image" src="./assets/sofi.JPG" alt="Sofiia Anenko" />
           </div>
-          <h1>Sofiia Anenko</h1>
-          <p>JavaScript Developer</p>
+          <h1 class="credentials">Sofiia Anenko</h1>
+          <p class="occupation">JavaScript Developer</p>
         </div>
       </section>
-      <section>
-        <div>
-          <h2 id="contacts">Contacts</h2>
-          <ul>
-            <li>
-              <a href="tel:+380633610563">
+      <section class="section">
+        <div class="container">
+          <h2 id="contacts" class="heading">Contacts</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+380633610563">
                 <svg width="32" height="32">
                   <use href="./assets/sprite.svg#icon-mobile"></use>
                 </svg>
-                <span>+380 63 361 05 63</span>
+                <span class="contacts__text">+380 63 361 05 63</span>
               </a>
             </li>
-            <li>
-              <a href="mailto:anenko.sofiia@gmail.com">
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:anenko.sofiia@gmail.com">
                 <svg width="32" height="32">
                   <use href="./assets/sprite.svg#icon-gmail"></use>
                 </svg>
-                <span>anenko.sofiia@gmail.com</span>
+                <span class="contacts__text">anenko.sofiia@gmail.com</span>
               </a>
             </li>
-            <li>
-              <a href="https://www.linkedin.com/in/sofiia-anenko/" target="_blank">
+            <li class="contacts__item">
+              <a class="contacts__link" href="https://www.linkedin.com/in/sofiia-anenko/" target="_blank">
                 <svg width="32" height="32">
                   <use href="./assets/sprite.svg#icon-linkedin"></use>
                 </svg>
-                <span>linkedin.com/in/sofiia-anenko/</span>
+                <span class="contacts__text">linkedin.com/in/sofiia-anenko/</span>
               </a>
             </li>
           </ul>
         </div>
       </section>
-      <section>
-        <div>
-          <h2 id="about">About me</h2>
-          <p>
+      <section class="section">
+        <div class="container">
+          <h2 id="about" class="heading">About me</h2>
+          <p class="about__description">
             From the moment I produced “Hello World” in the console of my first application, I knew I was hooked into
             the world of
             software development. But software development has never been “just a job” for me, it’s offered an engaging
@@ -78,13 +78,13 @@
           </p>
         </div>
       </section>
-      <section>
-        <div>
-          <h2 id="skills">Skills</h2>
-          <ul>
-            <li>
-              <h3>Hard skills</h3>
-              <ul>
+      <section class="section">
+        <div class="container">
+          <h2 id="skills" class="heading">Skills</h2>
+          <ul class="skills__list">
+            <li class="skills__item">
+              <h3 class="skills__item-title">Hard skills</h3>
+              <ul class="skills__item-list">
                 <li>JavaScript</li>
                 <li>TypeScript</li>
                 <li>React.js</li>
@@ -96,9 +96,9 @@
                 <li>Redux & Redux Toolkit</li>
               </ul>
             </li>
-            <li>
-              <h3>Soft skills</h3>
-              <ul>
+            <li class="skills__item">
+              <h3 class="skills__item-title">Soft skills</h3>
+              <ul class="skills__item-list">
                 <li>Ability to work efficiently both individually and in a team</li>
                 <li>Growth-mindset</li>
                 <li>Googling</li>
@@ -108,26 +108,59 @@
           </ul>
         </div>
       </section>
-      <section>
-        <div>
-          <h2 id="projects">Project experience</h2>
-          <ul>
-            <li>
-              <div>
-                <h3><a href="https://todo-app-frontend-9gwb.onrender.com/" target="_blank">Todo App</a></h3>
-                <a href="https://github.com/anenkosofi/scaling-enigma">
+      <section class="section">
+        <div class="container">
+          <h2 id="projects" class="heading">Project experience</h2>
+          <ul class="projects__list">
+            <li class="projects__item">
+              <div class="projects__heading">
+                <h3 class="projects__title"><a class="projects__title-link"
+                    href="https://todo-app-frontend-9gwb.onrender.com/" target="_blank">Todo
+                    App</a></h3>
+                <a class="projects__code-link" href="https://github.com/anenkosofi/scaling-enigma">
                   <svg width="24" height="24">
                     <use href="./assets/sprite.svg#icon-link"></use>
                   </svg>
                 </a>
               </div>
-              <p>[TypeScript, React.js, Node.js, Redux Toolkit, Axios, SCSS, Webpack]</p>
-              <p>
+              <ul class="projects__tech-list">
+                <li class="projects__tech-item">
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#icon-typescript"></use>
+                  </svg>
+                </li>
+                <li class="projects__tech-item">
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#icon-react"></use>
+                  </svg>
+                </li>
+                <li class="projects__tech-item">
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#icon-node"></use>
+                  </svg>
+                </li>
+                <li class="projects__tech-item">
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#icon-redux"></use>
+                  </svg>
+                </li>
+                <li class="projects__tech-item">
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#icon-sass"></use>
+                  </svg>
+                </li>
+                <li class="projects__tech-item">
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#icon-webpack"></use>
+                  </svg>
+                </li>
+              </ul>
+              <p class="projects__description">
                 A simple and easy to use todo management tool that lets you store all your tasks under a single
                 umbrella.
               </p>
-              <p>Acomplishments:</p>
-              <ul>
+              <p class="projects__acomplishments">Acomplishments:</p>
+              <ul class="projects__acomplishments-list">
                 <li>Integrated ReactJS components to enhance the user interface of a web-based app, improving
                   responsiveness and usability
                 </li>
@@ -139,21 +172,53 @@
                 <li>Implemented server-side todo application</li>
               </ul>
             </li>
-            <li>
-              <div>
-                <h3><a href="https://anenkosofi.github.io/literate-octo-robot/" target="_blank">Freshnesecom</a></h3>
-                <a href="https://github.com/anenkosofi/literate-octo-robot">
+            <li class="projects__item">
+              <div class="projects__heading">
+                <h3 class="projects__title"><a class="projects__title-link"
+                    href="https://anenkosofi.github.io/literate-octo-robot/" target="_blank">Freshnesecom</a></h3>
+                <a class="projects__code-link" href="https://github.com/anenkosofi/literate-octo-robot">
                   <svg width="24" height="24">
                     <use href="./assets/sprite.svg#icon-link"></use>
                   </svg>
                 </a>
               </div>
-              <p>[TypeScript, React.js, Node.js, Redux Toolkit, Axios, SCSS, Webpack]</p>
-              <p>
+              <ul class="projects__tech-list">
+                <li class="projects__tech-item">
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#icon-typescript"></use>
+                  </svg>
+                </li>
+                <li class="projects__tech-item">
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#icon-react"></use>
+                  </svg>
+                </li>
+                <li class="projects__tech-item">
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#icon-node"></use>
+                  </svg>
+                </li>
+                <li class="projects__tech-item">
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#icon-redux"></use>
+                  </svg>
+                </li>
+                <li class="projects__tech-item">
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#icon-sass"></use>
+                  </svg>
+                </li>
+                <li class="projects__tech-item">
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#icon-webpack"></use>
+                  </svg>
+                </li>
+              </ul>
+              <p class="projects__description">
                 Mobile friendly mediator between customers and sellers. The platform lets them order different products.
               </p>
-              <p>Acomplishments:</p>
-              <ul>
+              <p class="projects__acomplishments">Acomplishments:</p>
+              <ul class="projects__acomplishments-list">
                 <li>Implemented Google authentication</li>
                 <li>Developed and implemented a software solution for swiper-slider</li>
                 <li>Performed code review, worked closely with a mentor to ensure consistency to code standards</li>
@@ -164,9 +229,9 @@
           </ul>
         </div>
       </section>
-      <section>
-        <div>
-          <h2>Code sample</h2>
+      <section class="section">
+        <div class="container">
+          <h2 class="heading">Code sample</h2>
           <pre>
             <code>
         import React from 'react';
@@ -198,54 +263,55 @@
     </pre>
         </div>
       </section>
-      <section>
-        <div>
-          <h2 id="education">Education</h2>
-          <ul>
-            <li>
-              <p><span>GoIT</span><span>|</span><span>2022-2023</span></p>
-              <p>Full Stack Developer</p>
+      <section class="section">
+        <div class="container">
+          <h2 id="education" class="heading">Education</h2>
+          <ul class="education__list">
+            <li class="education__item">
+              <p class="education__school"><span>GoIT</span><span>|</span><span>2022-2023</span></p>
+              <p class="education__specialty">Full Stack Developer</p>
             </li>
-            <li>
-              <p><span>Bogomolets National Medical University</span><span>|</span><span>2015-2021</span></p>
-              <p>General Medicine</p>
+            <li class="education__item">
+              <p class="education__school"><span>Bogomolets National Medical
+                  University</span><span>|</span><span>2015-2021</span></p>
+              <p class="education__specialty">General Medicine</p>
             </li>
           </ul>
         </div>
       </section>
-      <section>
-        <div>
-          <h2 id="languages">Languages</h2>
-          <ul>
-            <li>
+      <section class="section">
+        <div class="container">
+          <h2 id="languages" class="heading">Languages</h2>
+          <ul class="languages__list">
+            <li class="languages__item">
               <span>Ukrainian</span><span>- native</span>
             </li>
-            <li>
+            <li class="languages__item">
               <span>English</span><span>- upper-intermediate</span>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer>
-      <div>
-        <ul>
-          <li>
-            <a href="https://github.com/anenkosofi">
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="https://github.com/anenkosofi">
               <svg width="32" height="32">
                 <use href="./assets/sprite.svg#icon-github"></use>
               </svg>
             </a>
           </li>
-          <li>
-            <a href="https://rs.school/js/">
+          <li class="footer__item">
+            <a class="footer__link" href="https://rs.school/js/">
               <svg width="80" height="40">
                 <use href="./assets/sprite.svg#icon-rs_school_js"></use>
               </svg>
             </a>
           </li>
         </ul>
-        <p>&#169;2023 Anenko. All rights reserved</p>
+        <p class="footer__rights">&#169;2023 Anenko. All rights reserved</p>
       </div>
     </footer>
   </body>
