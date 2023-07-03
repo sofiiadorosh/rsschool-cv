@@ -8,6 +8,245 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+    <header>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Project experience</a></li>
+            <li><a href="#code">Code sample</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#languages">Languages</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div>
+          <div>
+            <img src="./assets/sofi.JPG" alt="Sofiia Anenko" />
+          </div>
+          <h1>Sofiia Anenko</h1>
+          <p>JavaScript Developer</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h2 id="contacts">Contacts</h2>
+          <ul>
+            <li>
+              <a href="tel:+380633610563">
+                <svg width="32" height="32">
+                  <use href="./assets/sprite.svg#icon-mobile"></use>
+                </svg>
+                <span>+380 63 361 05 63</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:anenko.sofiia@gmail.com">
+                <svg width="32" height="32">
+                  <use href="./assets/sprite.svg#icon-gmail"></use>
+                </svg>
+                <span>anenko.sofiia@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/sofiia-anenko/" target="_blank">
+                <svg width="32" height="32">
+                  <use href="./assets/sprite.svg#icon-linkedin"></use>
+                </svg>
+                <span>linkedin.com/in/sofiia-anenko/</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h2 id="about">About me</h2>
+          <p>
+            From the moment I produced “Hello World” in the console of my first application, I knew I was hooked into
+            the world of
+            software development. But software development has never been “just a job” for me, it’s offered an engaging
+            challenge to
+            continually learn and improve my skills in creating high-quality software. What started with a simple “Hello
+            World” has
+            become a full-fledged passion that only gets more exciting as the time goes by.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h2 id="skills">Skills</h2>
+          <ul>
+            <li>
+              <h3>Hard skills</h3>
+              <ul>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>GIT</li>
+                <li>HTML5</li>
+                <li>CSS3 & preprocessor SCSS</li>
+                <li>Responsive and Adaptive Design</li>
+                <li>Redux & Redux Toolkit</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Soft skills</h3>
+              <ul>
+                <li>Ability to work efficiently both individually and in a team</li>
+                <li>Growth-mindset</li>
+                <li>Googling</li>
+                <li>Communicative skills</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h2 id="projects">Project experience</h2>
+          <ul>
+            <li>
+              <div>
+                <h3><a href="https://todo-app-frontend-9gwb.onrender.com/" target="_blank">Todo App</a></h3>
+                <a href="https://github.com/anenkosofi/scaling-enigma">
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#icon-link"></use>
+                  </svg>
+                </a>
+              </div>
+              <p>[TypeScript, React.js, Node.js, Redux Toolkit, Axios, SCSS, Webpack]</p>
+              <p>
+                A simple and easy to use todo management tool that lets you store all your tasks under a single
+                umbrella.
+              </p>
+              <p>Acomplishments:</p>
+              <ul>
+                <li>Integrated ReactJS components to enhance the user interface of a web-based app, improving
+                  responsiveness and usability
+                </li>
+                <li>Created a design and added cross-platform compatibility</li>
+                <li>Created customizable user authentication to provide log in & log out functionality</li>
+                <li>Built effective navigation components utilizing React Router to enable page-to-page navigation,
+                  facilitating access
+                </li>
+                <li>Implemented server-side todo application</li>
+              </ul>
+            </li>
+            <li>
+              <div>
+                <h3><a href="https://anenkosofi.github.io/literate-octo-robot/" target="_blank">Freshnesecom</a></h3>
+                <a href="https://github.com/anenkosofi/literate-octo-robot">
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#icon-link"></use>
+                  </svg>
+                </a>
+              </div>
+              <p>[TypeScript, React.js, Node.js, Redux Toolkit, Axios, SCSS, Webpack]</p>
+              <p>
+                Mobile friendly mediator between customers and sellers. The platform lets them order different products.
+              </p>
+              <p>Acomplishments:</p>
+              <ul>
+                <li>Implemented Google authentication</li>
+                <li>Developed and implemented a software solution for swiper-slider</li>
+                <li>Performed code review, worked closely with a mentor to ensure consistency to code standards</li>
+                <li>Identified and resolved bugs, proposed instructions to prevent bug’s replicating
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h2>Code sample</h2>
+          <pre>
+            <code>
+        import React from 'react';
+        import { Navigate } from 'react-router-dom';
 
+        import { useAuth } from '@hooks';
+
+        type PrivateRouteProps = {
+          component: JSX.Element;
+          redirectTo: string;
+        };
+
+        export const PrivateRoute = ({
+          component: Component,
+          redirectTo = '/',
+        }: PrivateRouteProps): JSX.Element => {
+          const { isAuthorized } = useAuth();
+          const shouldRedirect = !isAuthorized;
+          return shouldRedirect ? <Navigate to={redirectTo} /> : Component;
+        };
+
+        &lt;Route
+          path={Pathname.TODOS}
+          element={
+            &lt;PrivateRoute redirectTo={Pathname.AUTH} component={&lt;TodosPage />}
+          }
+        />
+      </code>
+    </pre>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h2 id="education">Education</h2>
+          <ul>
+            <li>
+              <p><span>GoIT</span><span>|</span><span>2022-2023</span></p>
+              <p>Full Stack Developer</p>
+            </li>
+            <li>
+              <p><span>Bogomolets National Medical University</span><span>|</span><span>2015-2021</span></p>
+              <p>General Medicine</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h2 id="languages">Languages</h2>
+          <ul>
+            <li>
+              <span>Ukrainian</span><span>- native</span>
+            </li>
+            <li>
+              <span>English</span><span>- upper-intermediate</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <ul>
+          <li>
+            <a href="https://github.com/anenkosofi">
+              <svg width="32" height="32">
+                <use href="./assets/sprite.svg#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://rs.school/js/">
+              <svg width="80" height="40">
+                <use href="./assets/sprite.svg#icon-rs_school_js"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p>&#169;2023 Anenko. All rights reserved</p>
+      </div>
+    </footer>
   </body>
 </html>
