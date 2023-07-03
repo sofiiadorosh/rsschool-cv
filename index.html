@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
@@ -12,7 +17,6 @@
       <div class="container">
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="#contacts">Contacts</a></li>
             <li class="nav__item"><a class="nav__link" href="#about">About me</a></li>
             <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
             <li class="nav__item"><a class="nav__link" href="#projects">Project experience</a></li>
@@ -24,33 +28,26 @@
       </div>
     </header>
     <main>
-      <section class="section">
+      <section class="section hero-section">
         <div class="container">
           <div class="image__thumb">
             <img class="image" src="./assets/sofi.JPG" alt="Sofiia Anenko" />
           </div>
-          <h1 class="credentials">Sofiia Anenko</h1>
+          <h1 class="credentials">Hello, I am Sofi :)</h1>
           <p class="occupation">JavaScript Developer</p>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <h2 id="contacts" class="heading">Contacts</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <a class="contacts__link" href="tel:+380633610563">
+              <a class="contacts__link" href="https://github.com/anenkosofi" target="_blank">
                 <svg width="32" height="32">
-                  <use href="./assets/sprite.svg#icon-mobile"></use>
+                  <use href="./assets/sprite.svg#icon-github"></use>
                 </svg>
-                <span class="contacts__text">+380 63 361 05 63</span>
               </a>
             </li>
             <li class="contacts__item">
               <a class="contacts__link" href="mailto:anenko.sofiia@gmail.com">
-                <svg width="32" height="32">
+                <svg width="32" height="28">
                   <use href="./assets/sprite.svg#icon-gmail"></use>
                 </svg>
-                <span class="contacts__text">anenko.sofiia@gmail.com</span>
               </a>
             </li>
             <li class="contacts__item">
@@ -58,7 +55,6 @@
                 <svg width="32" height="32">
                   <use href="./assets/sprite.svg#icon-linkedin"></use>
                 </svg>
-                <span class="contacts__text">linkedin.com/in/sofiia-anenko/</span>
               </a>
             </li>
           </ul>
@@ -80,31 +76,17 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 id="skills" class="heading">Skills</h2>
+          <h2 id="skills" class="heading">Hard skills</h2>
           <ul class="skills__list">
-            <li class="skills__item">
-              <h3 class="skills__item-title">Hard skills</h3>
-              <ul class="skills__item-list">
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>React.js</li>
-                <li>Node.js</li>
-                <li>GIT</li>
-                <li>HTML5</li>
-                <li>CSS3 & preprocessor SCSS</li>
-                <li>Responsive and Adaptive Design</li>
-                <li>Redux & Redux Toolkit</li>
-              </ul>
-            </li>
-            <li class="skills__item">
-              <h3 class="skills__item-title">Soft skills</h3>
-              <ul class="skills__item-list">
-                <li>Ability to work efficiently both individually and in a team</li>
-                <li>Growth-mindset</li>
-                <li>Googling</li>
-                <li>Communicative skills</li>
-              </ul>
-            </li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>GIT</li>
+            <li>HTML5</li>
+            <li>CSS3 & preprocessor SCSS</li>
+            <li>Responsive and Adaptive Design</li>
+            <li>Redux & Redux Toolkit</li>
           </ul>
         </div>
       </section>
@@ -118,9 +100,7 @@
                     href="https://todo-app-frontend-9gwb.onrender.com/" target="_blank">Todo
                     App</a></h3>
                 <a class="projects__code-link" href="https://github.com/anenkosofi/scaling-enigma">
-                  <svg width="24" height="24">
-                    <use href="./assets/sprite.svg#icon-link"></use>
-                  </svg>
+                  &lt;/code>
                 </a>
               </div>
               <ul class="projects__tech-list">
@@ -161,15 +141,16 @@
               </p>
               <p class="projects__acomplishments">Acomplishments:</p>
               <ul class="projects__acomplishments-list">
-                <li>Integrated ReactJS components to enhance the user interface of a web-based app, improving
+                <li>&#10003; Integrated ReactJS components to enhance the user interface of a web-based app, improving
                   responsiveness and usability
                 </li>
-                <li>Created a design and added cross-platform compatibility</li>
-                <li>Created customizable user authentication to provide log in & log out functionality</li>
-                <li>Built effective navigation components utilizing React Router to enable page-to-page navigation,
+                <li>&#10003; Created a design and added cross-platform compatibility</li>
+                <li>&#10003; Created customizable user authentication to provide log in & log out functionality</li>
+                <li>&#10003; Built effective navigation components utilizing React Router to enable page-to-page
+                  navigation,
                   facilitating access
                 </li>
-                <li>Implemented server-side todo application</li>
+                <li>&#10003; Implemented server-side todo application</li>
               </ul>
             </li>
             <li class="projects__item">
@@ -177,9 +158,7 @@
                 <h3 class="projects__title"><a class="projects__title-link"
                     href="https://anenkosofi.github.io/literate-octo-robot/" target="_blank">Freshnesecom</a></h3>
                 <a class="projects__code-link" href="https://github.com/anenkosofi/literate-octo-robot">
-                  <svg width="24" height="24">
-                    <use href="./assets/sprite.svg#icon-link"></use>
-                  </svg>
+                  &lt;/code>
                 </a>
               </div>
               <ul class="projects__tech-list">
@@ -219,10 +198,11 @@
               </p>
               <p class="projects__acomplishments">Acomplishments:</p>
               <ul class="projects__acomplishments-list">
-                <li>Implemented Google authentication</li>
-                <li>Developed and implemented a software solution for swiper-slider</li>
-                <li>Performed code review, worked closely with a mentor to ensure consistency to code standards</li>
-                <li>Identified and resolved bugs, proposed instructions to prevent bug’s replicating
+                <li>&#10003; Implemented Google authentication</li>
+                <li>&#10003; Developed and implemented a software solution for swiper-slider</li>
+                <li>&#10003; Performed code review, worked closely with a mentor to ensure consistency to code standards
+                </li>
+                <li>&#10003; Identified and resolved bugs, proposed instructions to prevent bug’s replicating
                 </li>
               </ul>
             </li>
@@ -232,7 +212,7 @@
       <section class="section">
         <div class="container">
           <h2 class="heading">Code sample</h2>
-          <pre>
+          <pre class="code">
             <code>
         import React from 'react';
         import { Navigate } from 'react-router-dom';
@@ -268,12 +248,12 @@
           <h2 id="education" class="heading">Education</h2>
           <ul class="education__list">
             <li class="education__item">
-              <p class="education__school"><span>GoIT</span><span>|</span><span>2022-2023</span></p>
+              <p class="education__school"><span>GoIT</span><span>2022-2023</span></p>
               <p class="education__specialty">Full Stack Developer</p>
             </li>
             <li class="education__item">
               <p class="education__school"><span>Bogomolets National Medical
-                  University</span><span>|</span><span>2015-2021</span></p>
+                  University</span><span>2015-2021</span></p>
               <p class="education__specialty">General Medicine</p>
             </li>
           </ul>
@@ -284,10 +264,10 @@
           <h2 id="languages" class="heading">Languages</h2>
           <ul class="languages__list">
             <li class="languages__item">
-              <span>Ukrainian</span><span>- native</span>
+              <span class="languages-lang">Ukrainian</span><span>native</span>
             </li>
             <li class="languages__item">
-              <span>English</span><span>- upper-intermediate</span>
+              <span class="languages-lang">English</span><span>upper-intermediate</span>
             </li>
           </ul>
         </div>
@@ -298,14 +278,14 @@
         <ul class="footer__list">
           <li class="footer__item">
             <a class="footer__link" href="https://github.com/anenkosofi">
-              <svg width="32" height="32">
+              <svg width="48" height="48">
                 <use href="./assets/sprite.svg#icon-github"></use>
               </svg>
             </a>
           </li>
           <li class="footer__item">
             <a class="footer__link" href="https://rs.school/js/">
-              <svg width="80" height="40">
+              <svg width="120" height="40">
                 <use href="./assets/sprite.svg#icon-rs_school_js"></use>
               </svg>
             </a>
