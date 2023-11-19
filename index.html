@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet"
-      href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
@@ -208,7 +208,7 @@
                   responsiveness and usability
                 </li>
                 <li>✅ Created a design and added cross-platform compatibility</li>
-                <li>✅ Created customizable user authentication to provide log in & log out functionality</li>
+                <li>✅ Created customizable user authentication to provide log in &amp; log out functionality</li>
                 <li>✅ Built effective navigation components utilizing React Router to enable page-to-page
                   navigation,
                   facilitating access
@@ -296,18 +296,18 @@
         export const PrivateRoute = ({
           component: Component,
           redirectTo = '/',
-        }: PrivateRouteProps): JSX.Element => {
+        }: PrivateRouteProps): JSX.Element =&gt; {
           const { isAuthorized } = useAuth();
           const shouldRedirect = !isAuthorized;
-          return shouldRedirect ? &lt;Navigate to={redirectTo} /> : Component;
+          return shouldRedirect ? &lt;Navigate to={redirectTo} /&gt; : Component;
         };
 
         &lt;Route
           path={Pathname.TODOS}
           element={
-            &lt;PrivateRoute redirectTo={Pathname.AUTH} component={&lt;TodosPage />}
+            &lt;PrivateRoute redirectTo={Pathname.AUTH} component={&lt;TodosPage /&gt;}
           }
-        />
+        /&gt;
       </code>
     </pre>
         </div>
