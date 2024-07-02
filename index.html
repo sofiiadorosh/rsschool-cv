@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet"
-      href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
@@ -31,27 +31,29 @@
       <section class="section hero-section">
         <div class="container">
           <div class="image__thumb">
-            <img class="image" src="./assets/sofi.JPG" alt="Sofiia Anenko">
+            <img class="image" src="./assets/sofi.JPG" alt="Sofiia Dorosh">
           </div>
           <h1 class="credentials">Hi there, I'm Sofi :)</h1>
           <p class="occupation">JavaScript Developer</p>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <a class="contacts__link" href="https://github.com/anenkosofi" target="_blank">
+              <a class="contacts__link" href="https://github.com/sofiiadorosh" target="_blank"
+                aria-label="GitHub Account">
                 <svg width="32" height="32">
                   <use href="./assets/sprite.svg#icon-github"></use>
                 </svg>
               </a>
             </li>
             <li class="contacts__item">
-              <a class="contacts__link" href="mailto:anenko.sofiia@gmail.com">
+              <a class="contacts__link" href="mailto:dorosh.sofiya@gmail.com" aria-label="E-mail Account">
                 <svg width="32" height="28">
                   <use href="./assets/sprite.svg#icon-gmail"></use>
                 </svg>
               </a>
             </li>
             <li class="contacts__item">
-              <a class="contacts__link" href="https://www.linkedin.com/in/sofiia-anenko/" target="_blank">
+              <a class="contacts__link" href="https://www.linkedin.com/in/sofiia-dorosh/" target="_blank"
+                aria-label="LinkedIn Account">
                 <svg width="32" height="32">
                   <use href="./assets/sprite.svg#icon-linkedin"></use>
                 </svg>
@@ -81,7 +83,7 @@
           </p>
           <p class="about__description">
             📫 Feel free to drop me a line at <a class="about__link"
-              href="mailto:anenko.sofiia@gmail.com">anenko.sofiia@gmail.com</a>. I'm
+              href="mailto:dorosh.sofiya@gmail.com">dorosh.sofiya@gmail.com</a>. I'm
             eager to connect with like-minded
             individuals, discuss
             coding, exchange ideas, or collaborate on exciting projects.
@@ -195,9 +197,11 @@
                     umbrella.
                   </p>
                   <div class="projects__button-wrapper">
-                    <a class="projects__button" href="https://todo-app-frontend-9gwb.onrender.com/" target="_blank">See
+                    <a class="projects__button" href="https://todo-app-frontend-9gwb.onrender.com/" target="_blank"
+                      aria-label="See more about project">See
                       project</a>
-                    <a class="projects__button" href="https://github.com/anenkosofi/scaling-enigma" target="_blank">See
+                    <a class="projects__button" href="https://github.com/sofiiadorosh/scaling-enigma" target="_blank"
+                      aria-label="See code on GitHub">See
                       code</a>
                   </div>
                 </div>
@@ -208,7 +212,7 @@
                   responsiveness and usability
                 </li>
                 <li>✅ Created a design and added cross-platform compatibility</li>
-                <li>✅ Created customizable user authentication to provide log in & log out functionality</li>
+                <li>✅ Created customizable user authentication to provide log in &amp; log out functionality</li>
                 <li>✅ Built effective navigation components utilizing React Router to enable page-to-page
                   navigation,
                   facilitating access
@@ -258,10 +262,10 @@
                     products.
                   </p>
                   <div class="projects__button-wrapper">
-                    <a class="projects__button" href="https://anenkosofi.github.io/literate-octo-robot/"
-                      target="_blank">See project</a>
-                    <a class="projects__button" href="https://github.com/anenkosofi/literate-octo-robot"
-                      target="_blank">See code</a>
+                    <a class="projects__button" href="https://sofiiadorosh.github.io/literate-octo-robot/" target="_blank"
+                      aria-label="See more about project">See project</a>
+                    <a class="projects__button" href="https://github.com/sofiiadorosh/literate-octo-robot" target="_blank"
+                      aria-label="See code on GitHub">See code</a>
                   </div>
                 </div>
               </div>
@@ -296,18 +300,18 @@
         export const PrivateRoute = ({
           component: Component,
           redirectTo = '/',
-        }: PrivateRouteProps): JSX.Element => {
+        }: PrivateRouteProps): JSX.Element =&gt; {
           const { isAuthorized } = useAuth();
           const shouldRedirect = !isAuthorized;
-          return shouldRedirect ? &lt;Navigate to={redirectTo} /> : Component;
+          return shouldRedirect ? &lt;Navigate to={redirectTo} /&gt; : Component;
         };
 
         &lt;Route
           path={Pathname.TODOS}
           element={
-            &lt;PrivateRoute redirectTo={Pathname.AUTH} component={&lt;TodosPage />}
+            &lt;PrivateRoute redirectTo={Pathname.AUTH} component={&lt;TodosPage /&gt;}
           }
-        />
+        /&gt;
       </code>
     </pre>
         </div>
@@ -346,21 +350,22 @@
       <div class="container">
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="footer__link" href="https://github.com/anenkosofi">
+            <a class="footer__link" href="https://github.com/sofiiadorosh" target="_blank"
+              aria-label="See Github Account">
               <svg width="48" height="48">
                 <use href="./assets/sprite.svg#icon-github"></use>
               </svg>
             </a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="https://rs.school/js/">
+            <a class="footer__link" href="https://rs.school/js/" target="_blank" aria-label="See RSSchool Course">
               <svg width="120" height="40">
                 <use href="./assets/sprite.svg#icon-rs_school_js"></use>
               </svg>
             </a>
           </li>
         </ul>
-        <p class="footer__rights">&#169; 2023 Anenko. All rights reserved</p>
+        <p class="footer__rights">&#169; 2023 Dorosh. All rights reserved</p>
       </div>
     </footer>
   </body>
