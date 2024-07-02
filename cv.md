@@ -1,10 +1,10 @@
 # CV
 
-**Sofiia Anenko**
+**Sofiia Dorosh**
 
 Phone: +380 63 361 0565  
-E-mail: anenko.sofiia@gmail.com  
-LinkedIn: https://www.linkedin.com/in/sofiia-anenko/
+E-mail: dorosh.sofiya@gmail.com  
+LinkedIn: https://www.linkedin.com/in/sofiia-dorosh/
 
 ## About me
 
