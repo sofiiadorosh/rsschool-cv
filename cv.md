@@ -64,3 +64,8 @@ GitHub: https://github.com/sofiiadorosh/literate-octo-robot
 
 ### The Rolling Scopes School — JS / FE Pre-School 2023Q2 (JavaScript)
 2024
+
+## Languages
+
+* English — C1
+* Ukrainian — Native
