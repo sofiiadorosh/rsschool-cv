@@ -32,3 +32,20 @@ I believe that technology should not limit an idea. If there is a problem worth 
 A project developed during my internship, focused on strengthening my React skills through hands-on development and applying modern frontend technologies to a real project.
 
 GitHub: https://github.com/sofiiadorosh/literate-octo-robot
+
+## Work Experience
+### ODDITY
+
+#### Full Stack Developer / Development Lead
+##### 2023 – Present
+
+* Design and develop end-to-end quiz experiences, from user flows and conditional logic to product recommendations and data collection.
+* Build dynamic quiz flows where users' answers determine subsequent questions, creating personalized user journeys.
+* Develop product recommendation logic that determines the most relevant product for each user based on their quiz responses.
+* Designed and implemented a returning-user experience that allows users to retrieve their previous quiz results.
+* Implement data collection and storage solutions that preserve user results for further analysis and business insights.
+* Develop responsive web pages and contribute to establishing responsive development practices across the product.
+* Implement solutions that ensure consistent application behavior across different devices and screen sizes.
+* Work across both frontend and backend layers, integrating APIs, business logic, and data storage into complete product features.
+* Investigate and resolve technical issues, balancing business requirements, user experience, and technical constraints.
+* Promoted to Development Lead, taking responsibility for code reviews and supporting junior developers in solving technical problems and completing tasks.
