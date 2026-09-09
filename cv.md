@@ -15,3 +15,12 @@ I am a full-stack developer with 3 years of commercial experience in web develop
 I am currently moving deeper into backend development while expanding my knowledge of Computer Science, Machine Learning, and Artificial Intelligence. My goal is not simply to work with existing technologies, but to become an engineer who can understand a problem from different perspectives and build the right solution for it.
 
 I believe that technology should not limit an idea. If there is a problem worth solving or an idea worth building, I want to be the person who can figure out how to make it real.
+
+## Hard Skills
+* HTML5
+* CSS3
+* JavaScript
+* TypeScript
+* Angular
+* Node.js
+* MongoDB
