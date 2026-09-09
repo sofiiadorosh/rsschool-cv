@@ -49,3 +49,18 @@ GitHub: https://github.com/sofiiadorosh/literate-octo-robot
 * Work across both frontend and backend layers, integrating APIs, business logic, and data storage into complete product features.
 * Investigate and resolve technical issues, balancing business requirements, user experience, and technical constraints.
 * Promoted to Development Lead, taking responsibility for code reviews and supporting junior developers in solving technical problems and completing tasks.
+
+## Education
+
+### Neoversity. IT University
+#### Master of Science, Computer Science — Machine Learning and Artificial Intelligence
+2026 – 2028
+
+### Bogomolets National Medical University
+#### Specialist, General Medicine
+2015 – 2021
+
+## Courses & Certifications
+
+### The Rolling Scopes School — JS / FE Pre-School 2023Q2 (JavaScript)
+2024
