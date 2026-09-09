@@ -24,3 +24,11 @@ I believe that technology should not limit an idea. If there is a problem worth 
 * Angular
 * Node.js
 * MongoDB
+
+## Code Examples
+
+### Literate Octo Robot — React, TypeScript, HTML, SCSS
+
+A project developed during my internship, focused on strengthening my React skills through hands-on development and applying modern frontend technologies to a real project.
+
+GitHub: https://github.com/sofiiadorosh/literate-octo-robot
