@@ -63,6 +63,7 @@
   --arrow-thickness: 2px;
   --arrow-head: 6px;
 
+  --skills-icon-size: 40px;
   --socials-size: 44px;
   --socials-icon-size: 20px;
   --photo-width: 360px;
@@ -445,4 +446,68 @@ a {
 
 .code-string {
   color: var(--color-code-string);
+}
+
+.skills {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  background-color: var(--color-background);
+  border: var(--border-thick);
+  border-top: none;
+  box-shadow: var(--shadow-md);
+}
+
+.skills-label {
+  padding: var(--space-lg) var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-sm);
+  color: var(--color-text-inverse);
+  background-color: var(--color-action);
+  border-right: var(--border-thick);
+}
+
+.skills-title {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+}
+
+.skills-list {
+  flex: 1;
+  padding: var(--space-lg) var(--space-md);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-lg) var(--space-md);
+}
+
+.skills-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  transition: color var(--transition);
+}
+
+.skills-item:hover {
+  color: var(--color-action);
+}
+
+.skills-icon {
+  width: var(--skills-icon-size);
+  height: var(--skills-icon-size);
+}
+
+.skills-name {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wide);
 }
