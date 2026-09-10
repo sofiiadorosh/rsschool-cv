@@ -74,6 +74,8 @@
   --timeline-offset: 36px;
   --burst-size: 180px;
   --socials-size: 44px;
+  --course-logo-height: 24px;
+  --separator-size: 6px;
   --socials-icon-size: 20px;
   --photo-width: 360px;
   --photo-offset: 20px;
@@ -856,4 +858,91 @@ a {
   width: var(--burst-size);
   height: var(--burst-size);
   pointer-events: none;
+}
+
+.footer {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  font-family: var(--font-mono);
+  background-color: var(--color-surface);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-md);
+}
+
+.footer-logo {
+  flex: 0 0 var(--label-width);
+  padding: var(--space-lg) var(--space-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: var(--color-accent);
+  border-right: var(--border-thick);
+}
+
+.footer-center {
+  flex: 1;
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-sm) var(--space-md);
+}
+
+.footer-copyright {
+  font-size: var(--font-size-xs);
+}
+
+.footer-separator {
+  width: var(--separator-size);
+  height: var(--separator-size);
+  background-color: var(--color-black);
+  transform: rotate(45deg);
+}
+
+.footer-course {
+  padding: var(--space-2xs) var(--space-sm);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-xs);
+  background-color: var(--color-surface);
+  border: var(--border);
+  box-shadow: var(--shadow-sm);
+  transition:
+    background-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.footer-course:hover {
+  background-color: var(--color-accent);
+  transform: translate(var(--press-offset), var(--press-offset));
+  box-shadow: none;
+}
+
+.footer-course-label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+}
+
+.footer-course-logo {
+  height: var(--course-logo-height);
+  aspect-ratio: 3 / 2;
+}
+
+.footer-socials {
+  padding: var(--space-sm) var(--space-md);
+  border-left: var(--border-thick);
 }
