@@ -631,6 +631,11 @@ a {
 }
 
 .project-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   border: var(--border);
 }
 
