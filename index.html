@@ -1,10 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofiia Dorosh — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <header class="header">
+    <div class="header-logo">&lt;&sol;&gt; Sofiia Dorosh</div>
+
+    <nav class="header-navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item"><a class="navigation-link" href="#skills">Skills</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="#projects">Projects</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="#experience">Experience</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="#certifications">Certifications</a></li>
+      </ul>
+    </nav>
+
+    <a class="header-button" href="#contact">
+      <span class="header-button-name">Contact me</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="about" id="about">
+      <div class="about-content">
+        <p class="about-badge">
+          <span>Hey, I&apos;m Sofiia</span>
+          <span aria-hidden="true">&#128075;</span>
+        </p>
+
+        <h1 class="about-title">Software<br>Engineer</h1>
+
+        <p class="about-description">
+          I believe technology is a <strong>tool for turning ideas into reality.</strong>
+        </p>
+
+        <div class="about-actions">
+          <a class="button button-accent" href="https://github.com/sofiiadorosh?tab=repositories" target="_blank" rel="noopener noreferrer">
+            View my work <span class="button-icon button-icon-up-right" aria-hidden="true"></span>
+          </a>
+          <a class="button button-ghost" href="https://sofiiadorosh.github.io/rsschool-cv/cv" target="_blank" rel="noopener noreferrer">
+            View full resume <span class="button-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div class="about-connect">
+          <p class="about-connect-title">Connect with me</p>
+
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a class="socials-link" href="https://github.com/sofiiadorosh" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                <svg class="socials-icon" aria-hidden="true">
+                  <use href="./assets/sprite.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link" href="https://www.linkedin.com/in/sofiia-dorosh/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg class="socials-icon" aria-hidden="true">
+                  <use href="./assets/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link" href="mailto:dorosh.sofiya@gmail.com" aria-label="Email">
+                <svg class="socials-icon" aria-hidden="true">
+                  <use href="./assets/sprite.svg#icon-email"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="about-media">
+        <figure class="about-photo">
+          <img src="./assets/sofiia-dorosh.webp" alt="Sofiia Dorosh" width="640" height="800" loading="lazy">
+        </figure>
+
+        <pre class="about-code"><code><span class="code-prompt">&gt;</span> <span class="code-keyword">const</span> engineer = {
+    <span class="code-key">focus</span>: <span class="code-string">&apos;Artificial Intelligence&apos;</span>,
+    <span class="code-key">study</span>: <span class="code-string">&apos;Machine Learning&apos;</span>,
+    <span class="code-key">build</span>: <span class="code-string">&apos;End-to-end products&apos;</span>,
+    <span class="code-key">believe</span>: <span class="code-string">&apos;Ideas over limits&apos;</span>
+  }</code></pre>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="skills-label">
+        <h2 class="skills-title">Skills</h2>
+        <span class="button-icon" aria-hidden="true"></span>
+      </div>
+
+      <ul class="skills-list">
+        <li class="skills-item">
+          <svg class="skills-icon" aria-hidden="true">
+            <use href="./assets/sprite.svg#icon-html5"></use>
+          </svg>
+          <span class="skills-name">HTML5</span>
+        </li>
+        <li class="skills-item">
+          <svg class="skills-icon" aria-hidden="true">
+            <use href="./assets/sprite.svg#icon-css3"></use>
+          </svg>
+          <span class="skills-name">CSS3</span>
+        </li>
+        <li class="skills-item">
+          <svg class="skills-icon" aria-hidden="true">
+            <use href="./assets/sprite.svg#icon-javascript"></use>
+          </svg>
+          <span class="skills-name">JavaScript</span>
+        </li>
+        <li class="skills-item">
+          <svg class="skills-icon" aria-hidden="true">
+            <use href="./assets/sprite.svg#icon-typescript"></use>
+          </svg>
+          <span class="skills-name">TypeScript</span>
+        </li>
+        <li class="skills-item">
+          <svg class="skills-icon" aria-hidden="true">
+            <use href="./assets/sprite.svg#icon-angular"></use>
+          </svg>
+          <span class="skills-name">Angular</span>
+        </li>
+        <li class="skills-item">
+          <svg class="skills-icon" aria-hidden="true">
+            <use href="./assets/sprite.svg#icon-nodejs"></use>
+          </svg>
+          <span class="skills-name">Node.js</span>
+        </li>
+        <li class="skills-item">
+          <svg class="skills-icon" aria-hidden="true">
+            <use href="./assets/sprite.svg#icon-mongodb"></use>
+          </svg>
+          <span class="skills-name">MongoDB</span>
+        </li>
+        <li class="skills-item">
+          <svg class="skills-icon" aria-hidden="true">
+            <use href="./assets/sprite.svg#icon-git"></use>
+          </svg>
+          <span class="skills-name">Git</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="work">
+      <div class="projects" id="projects">
+        <div class="projects-header">
+          <h2 class="projects-title">Featured projects</h2>
+
+          <a class="button button-ghost" href="https://github.com/sofiiadorosh?tab=repositories" target="_blank" rel="noopener noreferrer">
+            View all projects <span class="button-icon" aria-hidden="true"></span>
+          </a>
+
+          <div class="projects-controls">
+            <button class="projects-control" type="button" data-carousel-prev aria-label="Previous project">
+              <span class="button-icon button-icon-left" aria-hidden="true"></span>
+            </button>
+            <button class="projects-control" type="button" data-carousel-next aria-label="Next project">
+              <span class="button-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+
+        <ul class="projects-track" data-carousel-track>
+          <li class="project-card">
+            <div class="project-thumb project-thumb-literate-octo-robot">
+              <img class="project-image" src="./assets/project-literate-octo-robot.webp" alt="Literate Octo Robot storefront with category and brand filters beside a list of product cards" width="960" height="492" loading="lazy">
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Literate Octo Robot</h3>
+              <p class="project-description">An internship project for deepening React skills — Redux Toolkit state, validated forms and Firebase behind a typed component layer.</p>
+
+              <ul class="project-tags">
+              <li class="project-tag">React</li>
+              <li class="project-tag">TypeScript</li>
+              <li class="project-tag">SCSS</li>
+              <li class="project-tag">Firebase</li>
+              </ul>
+
+              <div class="project-actions">
+                <a class="button button-accent" href="https://sofiiadorosh.github.io/literate-octo-robot/" target="_blank" rel="noopener noreferrer">
+                  Live demo <span class="button-icon button-icon-up-right" aria-hidden="true"></span>
+                </a>
+                <a class="button button-ghost" href="https://github.com/sofiiadorosh/literate-octo-robot" target="_blank" rel="noopener noreferrer">
+                  Code <span class="button-icon" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="project-card">
+            <div class="project-thumb project-thumb-audio-player">
+              <img class="project-image" src="./assets/project-audio-player.webp" alt="Audio Player playing a track, with album art, progress bar and playback controls" width="960" height="492" loading="lazy">
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Audio Player</h3>
+              <p class="project-description">A music player written in vanilla JavaScript — playlist loaded from JSON, with play, skip and volume controls.</p>
+
+              <ul class="project-tags">
+              <li class="project-tag">JavaScript</li>
+              <li class="project-tag">HTML5</li>
+              <li class="project-tag">CSS3</li>
+              </ul>
+
+              <div class="project-actions">
+                <a class="button button-accent" href="https://sofiiadorosh.github.io/audio-player/audio-player/index.html" target="_blank" rel="noopener noreferrer">
+                  Live demo <span class="button-icon button-icon-up-right" aria-hidden="true"></span>
+                </a>
+                <a class="button button-ghost" href="https://github.com/sofiiadorosh/audio-player" target="_blank" rel="noopener noreferrer">
+                  Code <span class="button-icon" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="project-card">
+            <div class="project-thumb project-thumb-css-bayan">
+              <img class="project-image" src="./assets/project-css-bayan.webp" alt="CSS Bayan accordion with the first panel expanded and the rest collapsed" width="960" height="492" loading="lazy">
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">CSS Bayan</h3>
+              <p class="project-description">An accordion driven entirely by CSS — radio inputs and the :checked selector do the work, with no JavaScript at all.</p>
+
+              <ul class="project-tags">
+              <li class="project-tag">HTML5</li>
+              <li class="project-tag">CSS3</li>
+              </ul>
+
+              <div class="project-actions">
+                <a class="button button-accent" href="https://sofiiadorosh.github.io/cssBayan/cssBayan/index.html" target="_blank" rel="noopener noreferrer">
+                  Live demo <span class="button-icon button-icon-up-right" aria-hidden="true"></span>
+                </a>
+                <a class="button button-ghost" href="https://github.com/sofiiadorosh/cssBayan" target="_blank" rel="noopener noreferrer">
+                  Code <span class="button-icon" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <aside class="certifications" id="certifications">
+        <h2 class="certifications-title">Certifications</h2>
+
+        <ul class="certifications-list">
+          <li class="certification-card">
+            <p class="certification-name">JS / FE Pre-School 2023Q2</p>
+            <p class="certification-issuer">The Rolling Scopes School</p>
+            <p class="certification-year">2024</p>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="experience-label">
+        <h2 class="experience-title">Experience</h2>
+        <span class="button-icon" aria-hidden="true"></span>
+      </div>
+
+      <div class="experience-body">
+        <ul class="timeline">
+          <li class="timeline-item">
+            <h3 class="timeline-role">
+              Full Stack Developer / Development Lead
+              <span class="timeline-company">ODDITY</span>
+            </h3>
+            <p class="timeline-period">2023 &mdash; Present</p>
+            <p class="timeline-description">
+              Design and build end-to-end quiz experiences &mdash; conditional flows,
+              product recommendation logic and the data behind them. Promoted to
+              Development Lead, owning code reviews and supporting junior developers.
+            </p>
+          </li>
+        </ul>
+
+        <a class="button button-ghost" href="https://sofiiadorosh.github.io/rsschool-cv/cv" target="_blank" rel="noopener noreferrer">
+          View full resume <span class="button-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <aside class="aside" id="contact">
+        <p class="aside-title">Let&apos;s turn ideas into reality together.</p>
+
+        <a class="button button-ghost" href="mailto:dorosh.sofiya@gmail.com">
+          Get in touch <span class="button-icon" aria-hidden="true"></span>
+        </a>
+
+        <svg class="aside-burst" aria-hidden="true">
+          <use href="./assets/sprite.svg#icon-burst"></use>
+        </svg>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-logo">
+      <span class="footer-logo-name">Sofiia Dorosh</span>
+      <span class="footer-logo-mark" aria-hidden="true">&lt;&sol;&gt;</span>
+    </div>
+
+    <div class="footer-center">
+      <p class="footer-copyright">&copy; 2026 Sofiia Dorosh. All rights reserved.</p>
+
+      <span class="footer-separator" aria-hidden="true"></span>
+
+      <a class="footer-course" href="https://rs.school/courses/javascript"
+        aria-label="In collab with The Rolling Scopes School" target="_blank" rel="noopener noreferrer">
+        <span class="footer-course-label">In collab with</span>
+        <svg class="footer-course-logo" aria-hidden="true">
+          <use href="./assets/sprite.svg#icon-rs-school"></use>
+        </svg>
+      </a>
+    </div>
+
+    <ul class="socials-list footer-socials">
+      <li class="socials-item">
+        <a class="socials-link" href="https://github.com/sofiiadorosh" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <svg class="socials-icon" aria-hidden="true">
+            <use href="./assets/sprite.svg#icon-github"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-item">
+        <a class="socials-link" href="https://www.linkedin.com/in/sofiia-dorosh/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg class="socials-icon" aria-hidden="true">
+            <use href="./assets/sprite.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-item">
+        <a class="socials-link" href="mailto:dorosh.sofiya@gmail.com" aria-label="Email">
+          <svg class="socials-icon" aria-hidden="true">
+            <use href="./assets/sprite.svg#icon-email"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <script src="./slider.js"></script>
 </body>
 </html>
